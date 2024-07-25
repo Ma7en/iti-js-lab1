@@ -1,0 +1,43 @@
+/* 
+color:
+
+header: #333333
+li: #4caf50
+
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header {
+    background-color: #333333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0px 60px;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    display: inline-block;
+    padding: 25px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+header ul li:hover a {
+    background-color: #4caf50;
+}
+
+.content {
+    margin: 20px;
+    padding: 60px;
+}
