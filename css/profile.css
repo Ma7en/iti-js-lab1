@@ -70,7 +70,7 @@ body {
 }
 
 :root {
-    --color: red;
+    --main-color: #c72b2c;
     --main-transition: all 0.5s;
 }
 
@@ -94,6 +94,7 @@ header: #151515
 
 */
 
+/* -- contact -- */
 .contact {
     background-color: #191919;
     position: relative;
@@ -108,11 +109,12 @@ header: #151515
 
 .contact .container .phone {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
 }
 
-.contact .container .phone i {
-    transform: rotate(90deg);
+.contact .container .phone svg {
+    width: 30px;
 }
 
 .contact .container .phone a {
@@ -126,8 +128,8 @@ header: #151515
 }
 
 .contact .container .icons ul li a,
-.contact .container .icons .search i {
-    padding: 10px;
+.contact .container .icons .search svg {
+    padding: 5px;
     display: inline-block;
     background-color: #444247;
     border-radius: 4px;
@@ -145,7 +147,7 @@ header: #151515
     gap: 10px;
 }
 
-/* header */
+/* -- header -- */
 .header {
     background-color: #151515;
     position: relative;
@@ -182,10 +184,10 @@ header: #151515
 }
 
 .header nav ul li a:hover {
-    background-color: #c72b2c;
+    background-color: var(--main-color);
 }
 
-/* hero */
+/* -- hero -- */
 .hero {
     background-image: url("../images/profile-bg.jpg");
     background-size: cover;
@@ -239,7 +241,7 @@ header: #151515
 
 .hero .container .content a {
     display: inline-block;
-    background-color: #c72b2c;
+    background-color: var(--main-color);
     color: #fff;
     padding: 10px;
     border-radius: 4px;
@@ -266,11 +268,14 @@ header: #151515
     left: 0;
 }
 
-.hero .container .arrow i {
+.hero .container .arrow svg {
+    width: 30px;
     display: inline-block;
-    background-color: #c72b2c;
+    background-color: var(--main-color);
     color: #fff;
-    padding: 10px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -283,6 +288,7 @@ header: #151515
     left: 0;
     position: absolute;
 }
+
 .hero .container .arrow #right {
     top: 50%;
     right: 0;
@@ -322,3 +328,5 @@ header: #151515
         width: 1170px;
     }
 }
+
+/* ===================================== */
